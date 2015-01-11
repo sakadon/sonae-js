@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Foxkeh Chat
 
 フォクすけがIRCをお手伝いしてくれるIRCクライアントです。
@@ -34,3 +35,7 @@ for FirefoxOS 1.3~ late(たぶん)
 * IRC proxy側で複数サーバに入ってると、チャネル動作があやしい気がする
 * XSS対策
 * まだ搭載できてない機能はいっぱい
+=======
+# sonae-js
+備えあれば憂いなし js版
+>>>>>>> origin/master
