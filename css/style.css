@@ -23,6 +23,15 @@
 	background-size: contain;
 }
 
+.current_number {
+	display: block;
+	text-align: right;
+	position: absolute;
+	top: 0.7em;
+	right: 0.7em;
+	color: #888;
+}
+
 
 /* -----------------------------------------
  * Section

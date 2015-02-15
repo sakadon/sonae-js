@@ -1,0 +1,279 @@
+{
+  "checklist": [
+    {
+      "id": "myself",
+      "name": "私について",
+      "description": "説明",
+      "question": [
+        {
+          "id": "name",
+          "label": "名前",
+          "type": "text",
+          "placeholder": "山田 太郎"
+        },
+        {
+          "id": "country",
+          "label": "本籍地",
+          "type": "text",
+          "placeholder": "福島県"
+        },
+        {
+          "id": "date",
+          "label": "誕生日",
+          "type": "date",
+          "placeholder": ""
+        },
+        {
+          "id": "blood_type",
+          "label": "血液型",
+          "type": "text",
+          "placeholder": "B"
+        },
+        {
+          "id": "pension_number",
+          "label": "年金番号",
+          "type": "text",
+          "placeholder": "000-00000"
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "住まいについて",
+      "description": "説明",
+      "question": [
+        {
+          "id": "address",
+          "label": "住まいの住所",
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "id": "tel",
+          "label": "住まいの電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "shelter_address",
+          "label": "最寄りの避難場所の住所",
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "id": "manage_tel",
+          "label": "管理会社の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "insurance_tel",
+          "label": "保険会社の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "id": "children",
+      "name": "子供について",
+      "description": "説明",
+      "question": [
+        {
+          "id": "name",
+          "label": "子供の名前",
+          "type": "text",
+          "placeholder": "山田 太郎"
+        },
+        {
+          "id": "date",
+          "label": "子供の誕生日",
+          "type": "date",
+          "placeholder": "2000-01-01"
+        },
+        {
+          "id": "tel",
+          "label": "子供の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "school_tel",
+          "label": "子供の学校の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "seminar_tel",
+          "label": "子供の塾の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "hospital_tel",
+          "label": "子供の病院の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "id": "spouse",
+      "name": "配偶者について",
+      "description": "説明",
+      "question": [
+        {
+          "id": "name",
+          "label": "配偶者の名前",
+          "type": "text",
+          "placeholder": "山田 太郎"
+        },
+        {
+          "id": "date",
+          "label": "配偶者の誕生日",
+          "type": "date",
+          "placeholder": "1989-01-01"
+        },
+        {
+          "id": "tel",
+          "label": "配偶者の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "parent_tel",
+          "label": "配偶者の親の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "work_tel",
+          "label": "配偶者の職場の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "id": "parent",
+      "name": "実家について",
+      "description": "説明",
+      "question": [
+        {
+          "id": "address",
+          "label": "実家の住所",
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "id": "mother_name",
+          "label": "母親の名前",
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "id": "mother_tel",
+          "label": "母親の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "father_name",
+          "label": "父親の名前",
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "id": "father_tel",
+          "label": "父親の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "helper_tel",
+          "label": "ヘルパーさんの電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "headhouse_tel",
+          "label": "本家の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "relative_tel",
+          "label": "親戚の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "name": "職場について",
+      "description": "説明",
+      "question": [
+        {
+          "id": "name",
+          "label": "会社名",
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "id": "tel",
+          "label": "職場の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "headoffice_tel",
+          "label": "本社の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "boss_tel",
+          "label": "上司の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "id": "disease",
+      "name": "病気について",
+      "description": "説明",
+      "question": [
+        {
+          "id": "have",
+          "label": "持病はありますか？",
+          "type": "radio",
+          "radio": {
+            "no": "なし",
+            "yes": "はい"
+          },
+          "placeholder": ""
+        },
+        {
+          "id": "name",
+          "label": "病名",
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "id": "hospital_tel",
+          "label": "病院の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
+          "id": "hospital_address",
+          "label": "病院の住所",
+          "type": "text",
+          "placeholder": ""
+        }
+      ]
+    }
+  ]
+}

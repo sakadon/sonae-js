@@ -10,193 +10,24 @@
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/encoding.min.js"></script>
-<script src="js/script.js"></script>
 </head>
 <body>
 
 <div id="checklist" data-role="page" data-title="チェックリスト" data-theme="a">
 	<div data-role="header" data-position="fixed">
 		<h1>備えチェックリスト</h1>
-		<a href="#index" class="ui-btn ui-btn-right ui-corner-all ui-btn-icon-notext ui-icon-carat-r" data-transition="slide">トップへ戻る</a>
+		<a href="index.html" class="ui-btn ui-btn-right ui-corner-all ui-btn-icon-notext ui-icon-carat-r" data-transition="slide">トップへ戻る</a>
 	</div>
 	<div role="main" class="ui-content">
-	
-		<div data-role="collapsible">
-			<h2>私について</h2>
-			<div class="ui-field-contain">
-				<label for="myself[name]">名前</label>
-				<input type="text" name="myself[name]" id="myself[name]" placeholder="山田 太郎">
-			</div>
-			<div class="ui-field-contain">
-				<label for="myself[country]">本籍地</label>
-				<input type="text" name="myself[country]" id="myself[country]" placeholder="福島県">
-			</div>
-			<div class="ui-field-contain">
-				<label for="myself[birthday]">誕生日</label>
-				<input type="date" data-role="date" name="myself[birthday]" id="myself[birthday]" placeholder="1989-01-01">
-			</div>
-			<div class="ui-field-contain">
-				<label for="myself[blood_type]">血液型</label>
-				<input type="text" name="myself[blood_type]" id="myself[blood_type]" placeholder="B">
-			</div>
-			<div class="ui-field-contain">
-				<label for="myself[pension_number]">年金番号</label>
-				<input type="text" name="myself[pension_number]" id="myself[pension_number]" placeholder="000-00000">
-			</div>
-		</div>
-	
-		<div data-role="collapsible">
-			<h2>職場について</h2>
-			<div class="ui-field-contain">
-				<label for="work[name]">会社名</label>
-				<input type="text" name="work[name]" id="work[name]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="work[tel]">職場の電話番号</label>
-				<input type="tel" name="work[tel]" id="work[tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="work[headoffice_tel]">本社の電話番号</label>
-				<input type="tel" name="work[headoffice_tel]" id="work[headoffice_tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="work[boss_tel]">上司の電話番号</label>
-				<input type="tel" name="work[boss_tel]" id="work[boss_tel]">
-			</div>
-		</div>
 
-		<div data-role="collapsible">
-			<h2>配偶者について</h2>
-			<div class="ui-field-contain">
-				<label for="spouse[name]">配偶者の名前</label>
-				<input type="text" name="spouse[name]" id="spouse[name]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="spouse[tel]">配偶者の電話番号</label>
-				<input type="tel" name="spouse[tel]" id="spouse[tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="spouse[parent_tel]">配偶者の親の電話番号</label>
-				<input type="tel" name="spouse[parent_tel]" id="spouse[parent_tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="spouse[work_tel]">配偶者の職場の電話番号</label>
-				<input type="tel" name="spouse[work_tel]" id="spouse[work_tel]">
-			</div>
-		</div>
-	
-		<div data-role="collapsible">
-			<h2>子供について</h2>
-			<div class="ui-field-contain">
-				<label for="children[name]">子供の名前</label>
-				<input type="text" name="children[name]" id="children[name]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="children[tel]">子供の電話番号</label>
-				<input type="tel" name="children[tel]" id="children[tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="children[school_tel]">子供の学校の電話番号</label>
-				<input type="tel" name="children[school_tel]" id="children[school_tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="children[seminar_tel]">子供の塾の電話番号</label>
-				<input type="tel" name="children[seminar_tel]" id="children[seminar_tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="children[hospital_tel]">子供の病院の電話番号</label>
-				<input type="tel" name="children[hospital_tel]" id="children[hospital_tel]">
-			</div>
-		</div>
-	
-		<div data-role="collapsible">
-			<h2>親について</h2>
-			<div class="ui-field-contain">
-				<label for="parent[address]">実家の住所</label>
-				<input type="text" name="parent[address]" id="parent[address]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="parent[mother_name]">母親の名前</label>
-				<input type="text" name="parent[mother_name]" id="parent[mother_name]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="parent[mother_tel]">母親の電話番号</label>
-				<input type="tel" name="parent[mother_tel]" id="parent[mother_tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="parent[father_name]">父親の名前</label>
-				<input type="text" name="parent[father_name]" id="parent[father_name]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="parent[father_tel]">父親の電話番号</label>
-				<input type="tel" name="parent[father_tel]" id="parent[father_tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="parent[helper_tel]">ヘルパーさんの電話番号</label>
-				<input type="tel" name="parent[helper_tel]" id="parent[helper_tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="parent[headhouse_tel]">本家の電話番号</label>
-				<input type="tel" name="parent[headhouse_tel]" id="parent[headhouse_tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="parent[relative_tel]">親戚の電話番号</label>
-				<input type="tel" name="parent[relative_tel]" id="parent[relative_tel]">
-			</div>
-		</div>
-	
-		<div data-role="collapsible">
-			<h2>住まいについて</h2>
-			<div class="ui-field-contain">
-				<label for="home[address]">住まいの住所</label>
-				<input type="text" name="home[address]" id="home[address]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="home[tel]">住まいの電話番号</label>
-				<input type="tel" name="home[tel]" id="home[tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="home[shelter_address]">最寄りの避難場所の住所</label>
-				<input type="text" name="home[shelter_address]" id="home[shelter_address]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="home[manage_tel]">管理会社の電話番号</label>
-				<input type="tel" name="home[manage_tel]" id="home[manage_tel]">
-			</div>
-			<div class="ui-field-contain">
-				<label for="home[insurance_tel]">保険会社の電話番号</label>
-				<input type="tel" name="home[insurance_tel]" id="home[insurance_tel]">
-			</div>
-		</div>
-	
-		<div data-role="collapsible">
-			<h2>病気について</h2>
-			<div class="ui-field-contain">
-				<label for="disease[have]">持病はありますか？</label>
-				<select data-role="flipswitch" name="disease[have]" id="disease[have]">
-					<option value="no">なし</option>
-					<option value="yes">はい</option>
-				</select>
-			</div>
-			<div class="ui-field-contain" class="disease_list">
-				<label for="disease[name]">病名</label>
-				<input type="text" name="disease[name]" id="disease[name]">
-			</div>
-			<div class="ui-field-contain" class="disease_list">
-				<label for="disease[hospital_tel]">病院の電話番号</label>
-				<input type="tel" name="disease[hospital_tel]" id="disease[hospital_tel]">
-			</div>
-			<div class="ui-field-contain" class="disease_list">
-				<label for="disease[hospital_address]">病院の住所</label>
-				<input type="text" name="disease[hospital_address]" id="disease[hospital_address]">
-			</div>
-		</div>
-	</div>
-	
+		<p id="loading">WARMING UP NOW</p>
+
 	<div id="checked" data-role="footer" data-position="fixed">
-		<p>チェック出来た数: <strong id="checked_text">0</strong></p>
+		<p>チェック出来た数: <strong id="checked_text">0</strong> / <span id="input_total"></span></p>
 	</div>
 </div>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
