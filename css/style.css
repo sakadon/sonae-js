@@ -33,6 +33,8 @@
 }
 
 
+
+
 /* -----------------------------------------
  * Section
  */
@@ -71,7 +73,9 @@ h1.title small {
  */
 
 
-
+#reset_allclear {
+	margin: 1em 0;
+}
 
 
 
@@ -92,9 +96,12 @@ h1.title small {
 
 
 /* -----------------------------------------
- * Iza
+ * Loading
  */
-
+#loading {
+	margin: 3em auto;
+	text-align: center;
+}
 
 
 

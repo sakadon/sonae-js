@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<title>備えあれば憂いなし</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <link rel="stylesheet" href="css/themes/sonae.min.css" type="text/css">
 <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" type="text/css">
@@ -10,6 +11,8 @@
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/encoding.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/rendarHTML.js"></script>
 </head>
 <body>
 
@@ -18,12 +21,12 @@
 		<h1 class="title">備えあれば憂いなし<small>〜オレの電話帳〜</small></h1>
 	
 		<section>
-			<h2 class="btn"><a href="check.html" class="ui-btn ui-btn-a ui-corner-all ui-btn-icon-left ui-icon-check" data-transition="slide" data-direction="reverse">備えチェックリスト</a></h2>
+			<h2 class="btn"><a href="#checklist" class="ui-btn ui-btn-a ui-corner-all ui-btn-icon-left ui-icon-check" data-transition="slide" data-direction="reverse">備えチェックリスト <em class="current_number"><span class="checked_number">0</span>/<span class="inputs_total">0</span></em></a></h2>
 			<p>貴方の備えは大丈夫？必要な連絡先やメモをチェックリストに沿って、確認しながらかんたんに入力できます。</p>
 		</section>
 		
 		<section>
-			<h2 class="btn"><a href="#flow" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-alert" data-transition="slide">緊急事態！何が起こりましたか？</a></h2>
+			<h2 class="btn"><a href="flow.html" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-alert" data-transition="slide">緊急事態！何が起こりましたか？</a></h2>
 			<p>備えた情報を元に、このアプリが適切な行動と連絡先を提案します。その指示を参考に行動してください。</p>
 		</section>
 		
@@ -31,7 +34,24 @@
 			<h2>About</h2>
 			<p>このアプリは 2014年10月12日に行われた「Hack for Japan 防災・減災ハッカソン」での成果作品です。</p>
 			<p><small>&copy; <a href="http://www.hack4.jp/" target="_blank">Hack4Japan</a>, SakaiYuya, TominariTakayuki, OgawaNobuhiro</small></p>
+			<button id="reset_allclear" class="ui-btn ui-mini">入力データの全リセット</button>
 		</div>
+	</div>
+</div>
+
+
+<div id="checklist" data-role="page" data-title="備えチェックリスト" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>備えチェックリスト</h1>
+		<a href="index.html" class="ui-btn ui-btn-right ui-corner-all ui-btn-icon-notext ui-icon-carat-r" data-transition="slide">トップへ戻る</a>
+	</div>
+	<div role="main" class="ui-content">
+
+		<p id="loading">WARMING UP NOW</p>
+
+	</div>
+	<div id="checked" data-role="footer" data-position="fixed">
+		<p>チェック出来た数: <strong id="checked_text">0</strong> / <span id="input_total">0</span></p>
 	</div>
 </div>
 
@@ -92,7 +112,9 @@
 	</div>
 </div>
 
-<script src="js/script.js"></script>
 
+<script src="js/index.js"></script>
+<script src="js/check.js"></script>
+<script src="js/flow.js"></script>
 </body>
 </html>

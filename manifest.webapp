@@ -17,7 +17,10 @@
 		"contacts": {
 			"description": "連絡先を参照しサジェストします",
 			"access": "readonly"
-		}
+		},
+		"systemXHR": {
+      		"description": "Allows loading remote content"
+   		}
 	},
 	"installs_allowed_from": [
 		"*"
