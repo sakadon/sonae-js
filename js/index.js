@@ -5,9 +5,11 @@ $(document).on('pageshow', '#index', function(){
 	$('#index').find('.current_number').hide();
 	var get_total = localStorage.getItem('_checklist_total');
 	if( get_total ){
-		
 		$('#index').find('.current_number').show().find('.inputs_total').text( get_total );
-		
+	}
+	var get_current = localStorage.getItem('_checklist_checked');
+	if( get_current ){
+		$('#index').find('.current_number').show().find('.checked_number').text( get_current );
 	}
 
 });
