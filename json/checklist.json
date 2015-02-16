@@ -166,6 +166,12 @@
           "placeholder": ""
         },
         {
+          "id": "tel",
+          "label": "実家の電話番号",
+          "type": "tel",
+          "placeholder": ""
+        },
+        {
           "id": "mother_name",
           "label": "母親の名前",
           "type": "text",
@@ -272,6 +278,63 @@
           "label": "病院の住所",
           "type": "text",
           "placeholder": ""
+        }
+      ]
+    }
+  ],
+  "flow": [
+    {
+      "id": "typhoon",
+      "name": "台風",
+      "description": "説明",
+      "situation": [
+        {
+          "id": "yukaueshinsui",
+          "label": "床上浸水しました",
+          "type": "flow",
+          "flow": [
+            {
+              "title": "ブレーカーを落として下さい",
+              "description": "浸水した水がコンセントへに触れるとショートし火災になる場合があります、懐中電灯などを用意し、ブレーカーを落として下さい。",
+              "data_id": ""
+            },
+            {
+              "title": "安全な場所へ避難してください",
+              "description": "浸水が進んでいるようであれば、安全な場所へ避難してください。",
+              "view": "show",
+              "data_id": "home[shelter_address]"
+            },
+            {
+              "title": "ケガや持病などは問題ありませんか？",
+              "description": "気になる事があれば、かかりつけの病院へ早めに相談してください。",
+              "data_id": "disease[hospital_tel]"
+            },
+            {
+              "title": "配偶者に連絡しましょう",
+              "description": "家と自分の状況を連絡してください。",
+              "data_id": "spouse[tel]"
+            },
+            {
+              "title": "子供に連絡しましょう",
+              "description": "家と自分の状況を連絡してください",
+              "data_id": "children[tel]"
+            },
+            {
+              "title": "実家に連絡しましょう",
+              "description": "家と自分の状況を連絡してください",
+              "data_id": "parent[tel]"
+            },
+            {
+              "title": "管理会社に連絡しましょう",
+              "description": "家と自分の状況を連絡し、今後の対応策について話し合って下さい。",
+              "data_id": "home[manage_tel]"
+            },
+            {
+              "title": "保険会社に連絡しましょう",
+              "description": "家と自分の状況を連絡し、今後の対応策について話し合って下さい。",
+              "data_id": "home[insurance_tel]"
+            }
+          ]
         }
       ]
     }
