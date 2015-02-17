@@ -29,7 +29,7 @@ $(document).on('pageinit', '#checklist', function(){
 	getlist.done( function(data){
 		
 		// remove loading
-		$('#loading').remove();
+		$('.loading').remove();
 		
 		//if( $('.question').length == 0 ){
 			
