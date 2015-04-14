@@ -12,8 +12,11 @@ $(document).on('pageinit', '#scenario', function(){
 	/**
 	 * JSONを読み込みhtmlを錬成する
 	 */
-	var getlist = $.ajax( 'json/checklist.json', {
+	var getlist = $.ajax( '../json/checklist.json', {
 		dataType: "json",
+        headers: {
+            'Content-Type': 'application/json'
+        },
 		cache: true,
 		xhrFields: {
         	mozSystem: true

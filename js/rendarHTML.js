@@ -58,7 +58,7 @@ var rendarHTML = {
 		$.each( obj.situation, function( i, situation ){
 			
 			var href = id+'_'+ situation.id ;
-			html += '<li><a href="#'+ href +'" data-transition="slide">'+situation.label+'</a></li>';
+			html += '<li><a href="#'+ href +'" data-ajax="false" data-transition="fade" >'+situation.label+'</a></li>';
 			
 			// フロータイプならフローつくる
 			if( situation.type == 'flow' && situation.flow ){
@@ -81,18 +81,18 @@ var rendarHTML = {
 		var flow = '<div id="'+ id +'" data-role="page" data-theme="b" class="flow" data-title="'+ situation.label +'">';
 		flow += '<div data-role="header" data-position="fixed">';
 		flow += '<h1>'+ situation.label +'</h1>';
-		flow += '<a href="#scenario" class="ui-btn ui-btn-left ui-corner-all ui-btn-icon-notext ui-icon-carat-l" data-transition="slide" data-direction="reverse">戻る</a>';
+		flow += '<a href="#scenario" class="ui-btn ui-btn-left ui-corner-all ui-btn-icon-notext ui-icon-carat-l" data-transition="fade" data-direction="reverse">戻る</a>';
 		flow += '</div>';
 		
-		flow += '<div role="main" class="ui-content">';
+		flow += '<div role="main" class="flow_slide ui-content">';
 		$.each( situation.flow, function( key, value ){
 			
 			var point = id +'_'+ key;
 			
 			console.log(key);
-			console.log(value);
+			//console.log(value);
 			
-			flow += '<div id="'+ point +'" class="ui-body ui-body-a ui-corner-all">';
+			flow += '<div id="'+ point +'" class="flow_slide_card>';
 			flow += '<h3>'+ key +'. '+ value.title +'</h3>';
 			flow += '<p>'+ value.description +'</p>';
 			flow += '</div>';
@@ -103,8 +103,8 @@ var rendarHTML = {
 		flow += '</div>';
 		// シナリオの下に出力してく
 		$('#scenario').after(flow);
-		console.log('#'+id);
-		$('#'+id).trigger('pagecreate');
+		//console.log('#'+id);
+		$('#'+id).trigger('pageinit');
 		
 	},
 	

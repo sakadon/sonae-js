@@ -5,5 +5,3 @@
 function selectorEscape(val){
     return val.replace(/[ !"#$%&'()*+,.\/:;<=>?@\[\\\]^`{|}~]/g, '\\$&');
 }
-
-
