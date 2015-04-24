@@ -4,9 +4,10 @@
 	"description": "貴方の備えは大丈夫？災害・緊急時に必要な連絡先を提供します。",
 	"launch_path": "/index.html",
 	"icons": {
-		"60": "/img/icon_60.png",
-		"128": "/img/icon_128.png",
-		"256": "/img/icon_256.png"
+		"60": "/img/sonae_64.png",
+        "64": "/img/sonae_64.png",
+		"128": "/img/sonae_128.png",
+		"256": "/img/sonae_256.png"
 	},
 	"developer": {
 		"name": "SakaiYuya (@sakadon)",

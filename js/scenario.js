@@ -14,9 +14,6 @@ $(document).on('pageinit', '#scenario', function(){
 	 */
 	var getlist = $.ajax( '../json/checklist.json', {
 		dataType: "json",
-        headers: {
-            'Content-Type': 'application/json'
-        },
 		cache: true,
 		xhrFields: {
         	mozSystem: true
