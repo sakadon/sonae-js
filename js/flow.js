@@ -5,7 +5,7 @@ $(document).on('pageshow', '.flow', function(){
         slideSelector: '.flow_slide_card',
         infiniteLoop: false,
         hideControlOnEnd: true,
-        pager: false
+        pagerSelector: '.pager',
     });
 
 

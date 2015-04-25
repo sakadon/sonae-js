@@ -84,7 +84,10 @@ var rendarHTML = {
 		flow += '<a href="#scenario" class="ui-btn ui-btn-left ui-corner-all ui-btn-icon-notext ui-icon-carat-l" data-transition="slide" data-direction="reverse">戻る</a>';
 		flow += '</div>';
 		
-		flow += '<div role="main" class="flow_slide ui-content">';
+		flow += '<div role="main" class="ui-content flow_slide_wrapper">';
+        flow += '<div class="pager"></div>';
+        flow += '<div class="flow_slide">';
+        //flow += '<div class="pager"></div>';
 		$.each( situation.flow, function( key, value ){
 			
 			var point = id +'_'+ key;
@@ -93,12 +96,13 @@ var rendarHTML = {
 			//console.log(value);
 			
 			flow += '<div id="'+ point +'" class="flow_slide_card">';
-			flow += '<h3>'+ key +'. '+ value.title +'</h3>';
+            flow += '<div class="flow_slide_card_body">';
+			flow += '<h3>'+ (key+1) +'. '+ value.title +'</h3>';
 			flow += '<p>'+ value.description +'</p>';
-			flow += '</div>';
+			flow += '</div></div>';
 			
 		});
-		flow += '</div>';
+		flow += '</div></div>';
 		
 		flow += '</div>';
 		// シナリオの下に出力
