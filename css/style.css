@@ -107,5 +107,15 @@ h1.title small {
 
 
 /* -----------------------------------------
- * 
+ * Flow
  */
+.flow_slide {
+	margin: 0;
+	padding: 0;
+	background: #ccaaaa;
+}
+.flow_slide_card {
+	border: solid 1px red;
+	margin: 0;
+	padding: 0;
+}

@@ -81,7 +81,7 @@ var rendarHTML = {
 		var flow = '<div id="'+ id +'" data-role="page" data-theme="b" class="flow" data-title="'+ situation.label +'">';
 		flow += '<div data-role="header" data-position="fixed">';
 		flow += '<h1>'+ situation.label +'</h1>';
-		flow += '<a href="#scenario" class="ui-btn ui-btn-left ui-corner-all ui-btn-icon-notext ui-icon-carat-l" data-transition="fade" data-direction="reverse">戻る</a>';
+		flow += '<a href="#scenario" class="ui-btn ui-btn-left ui-corner-all ui-btn-icon-notext ui-icon-carat-l" data-transition="slide" data-direction="reverse">戻る</a>';
 		flow += '</div>';
 		
 		flow += '<div role="main" class="flow_slide ui-content">';
@@ -89,8 +89,8 @@ var rendarHTML = {
 			
 			var point = id +'_'+ key;
 			
-			console.log(key);
-			console.log(value);
+			console.log(key +': '+ point);
+			//console.log(value);
 			
 			flow += '<div id="'+ point +'" class="flow_slide_card">';
 			flow += '<h3>'+ key +'. '+ value.title +'</h3>';
@@ -101,11 +101,9 @@ var rendarHTML = {
 		flow += '</div>';
 		
 		flow += '</div>';
-		// シナリオの下に出力してく
+		// シナリオの下に出力
 		$('#scenario').after(flow);
-		console.log(flow);
 		$('#'+id).trigger('pageinit');
-		//$('#'+id).trigger("create");
 		
 	},
 	
